@@ -1,28 +1,57 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #2f2f37;
-  max-width: 960px;
-  padding: 16px;
+p {
+  margin: 0;
 }
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.list{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
-
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+.movie__genres{
+  display: flex;
+  gap : 10px;
+}
+.main-page__container{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.movie__poster{
+  display: block;
+  border-radius: 5px;
+}
+.movie__title{
+margin: 0;
+font-family: 'Roboto';
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: rgba(0, 0, 0, 1);
+}
+.movie__information{
+  font-weight: 500;
+  margin-top: 12px;
+}
+.movie__genres{
+  margin: 0;
+  color:rgba(255, 107, 8, 1);
+  font-family: 'Roboto';
+  font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+   
+  
+}
+.movie__year{
+  display: inline-block;
+  
+}
+.movie__genres-list{
+  padding-right: 10px;
+  display: block;
+  border-right: solid 2px;
 }
