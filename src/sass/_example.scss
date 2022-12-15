@@ -55,9 +55,76 @@ color: rgba(0, 0, 0, 1);
   display: block;
   border-right: solid 2px;
 }
-.modal{
+
+
+
+body.show-modal .backdrop__modal {
+  transform: scale(1);
+}
+.backdrop{
   display: flex;
+  justify-content: center;
+  position: fixed;
+  align-items: center;  
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.backdrop__modal{
+border-radius: 4px;
+background-color: aqua;
+transform: scale(1.1);
+width: 100%;
+display: flex;
   width: 806px;
   height: 556px;
-  gap: 10px;
+  
+}
+body.show-modal .backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+}
+.modal__film-card{
+  display: flex;
+}
+
+
+
+.backdrop {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.backdrop__modal {
+  transform: scale(1.1);
+}
+
+body.show-modal .backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+}
+
+body.show-modal .backdrop__modal {
+  transform: scale(1);
 }
